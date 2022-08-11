@@ -3,9 +3,7 @@
  * @return {number}
  */
 var removeDuplicates = function (nums) {
-  nums = [];
-
-  return nums.length;
+  return nums.splice(0, nums.length, ...new Set(nums));
 };
 
 console.log(removeDuplicates([1, 1, 2]));
