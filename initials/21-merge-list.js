@@ -5,6 +5,7 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
 /**
  * @param {ListNode} list1
  * @param {ListNode} list2
@@ -17,10 +18,12 @@ function ListNode(val, next) {
   this.next = next === undefined ? null : next;
 }
 
-const node5 = ListNode(1);
-const node4 = ListNode(1, node5);
-const node3 = ListNode(1, node4);
-const node2 = ListNode(2, node3);
-const node1 = ListNode(1, node2);
+const node1_3 = new ListNode(3);
+const node1_2 = new ListNode(2, node1_3);
+const node1_1 = new ListNode(1, node1_2);
 
-mergeTwoLists(node1, node1);
+const node2_3 = new ListNode(3);
+const node2_2 = new ListNode(2, node2_3);
+const node2_1 = new ListNode(1, node2_2);
+
+console.log(mergeTwoLists(node1_1, node2_1));
