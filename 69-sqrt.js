@@ -1,3 +1,7 @@
+// ref
+// Leet Code 69. Sqrt(x)
+// https://www.youtube.com/watch?v=eC0b6lUj84w
+
 /**
  * @param {number} x
  * @return {number}
