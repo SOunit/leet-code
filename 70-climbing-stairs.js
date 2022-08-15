@@ -20,6 +20,7 @@ var climbStairs = function (n) {
     prev2 = prev1;
     prev1 = current;
   }
+
   return current;
 };
 
